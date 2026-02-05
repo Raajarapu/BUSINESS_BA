@@ -11,9 +11,11 @@ from ingestion.tabular import load_tabular, tabular_to_text
 from ingestion.text import load_text
 from ingestion.image import extract_text_from_image
 
-from analytics.statistics import descriptive_statistics, correlation_analysis
-from analytics.forecasting import forecast
-from analytics.probability import monte_carlo
+
+from analysis.statistics import descriptive_statistics, correlation_analysis
+from analysis.forecasting import forecast
+from analysis.probability import monte_carlo
+
 
 from rag.embeddings import embed_texts
 from rag.vector_store import create_faiss_index
