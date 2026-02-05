@@ -1,9 +1,9 @@
 from transformers import pipeline
-from config import LLM_MODEL
 
+# Use a universally supported model
 llm = pipeline(
-    "text2text-generation",
-    model=LLM_MODEL
+    "text-generation",
+    model="distilgpt2"
 )
 
 def reason(context, question):
@@ -18,5 +18,11 @@ Question:
 
 Provide structured, data-driven business insights.
 """
-    result = llm(prompt, max_length=512)
-    return result[0]["generated_text"]
+    output = llm(
+        prompt,
+        max_length=300,
+        do_sample=True,
+        temperature=0.7
+    )
+
+    return output[0]["generated_text"]
