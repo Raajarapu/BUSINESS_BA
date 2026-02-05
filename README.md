@@ -1,16 +1,37 @@
-# BUSINESS_BA
-
 # Business Model Evaluation Bot
 
-A free, Streamlit-based AI system for:
-- Business analytics
-- Statistical analysis
-- Forecasting
-- Probability & risk analysis
-- Multi-modal data ingestion
-- LLM + RAG reasoning
+An enterprise-style AI-powered Business Analytics & Evaluation system built using
+**Streamlit + LLM + RAG**, completely on a **free stack**.
 
-## Run Locally
+---
+
+## 🚀 Features
+
+- 📊 Descriptive & Statistical Analysis
+- 🔗 Correlation Analysis
+- 📈 Time-Series Forecasting
+- 🎲 Probability & Risk (Monte Carlo)
+- 🤖 Business Question Answering (LLM + RAG)
+- 📂 Multi-modal input:
+  - CSV / Excel
+  - Text
+  - Images (OCR)
+- 🧠 Modular, scalable architecture
+
+---
+
+## 🧱 Architecture
+
+- **UI**: Streamlit
+- **Analytics**: Pandas, NumPy, StatsModels
+- **RAG**: FAISS + Sentence Transformers
+- **LLM**: HuggingFace (FLAN-T5)
+- **OCR**: Tesseract
+
+---
+
+## ▶️ Run Locally
+
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
