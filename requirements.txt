@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+faiss-cpu
+sentence-transformers
+transformers
+torch
+statsmodels
+pytesseract
+pillow
+requests
+openpyxl
